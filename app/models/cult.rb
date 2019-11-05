@@ -1,6 +1,5 @@
 class Cult
-    attr_reader :name, :location, :founding_year
-    attr_accessor :slogan
+    attr_reader :name, :location, :founding_year, :slogan
 
     @@all = []
 
@@ -24,7 +23,7 @@ class Cult
         @@all.select {|cult| cult.name == name}
     end
     def self.find_by_location(location)
-        @@all.select {|cult| cult.location == location}
+        @@all.select {|location| cult.location == location}
     end
     def self.find_by_founding_year(year)
         @@all.select {|year| cult.founding_year == year}
