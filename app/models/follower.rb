@@ -10,14 +10,17 @@ class Follower
         @cults = []
         @@all << self
     end
+
     def self.all
         @@all
     end
+
     def join_cult(cult)
         BloodOath.new(cult, self)
         @cults << cult
     end
+    
     def self.of_a_certain_age(age)
-        @all.select {|follower| follower.age >= age}
+        @@all.select {|follower| follower.age >= age}
     end
 end

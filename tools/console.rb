@@ -24,10 +24,9 @@ follower3 = Follower.new("name3", 27, "Breathe")
 #cult1.join_cult(cult_1) -- adds name to cult list
 #Follower.all[1].age -- use index number (0,1,2...)
 
-
-BloodOath.new(cult1, follower1)
-BloodOath.new(cult2, follower2)
-BloodOath.new(cult3, follower3)
+oath1 = BloodOath.new(cult1, follower1)
+oath2 = BloodOath.new(cult2, follower2)
+oath3 = BloodOath.new(cult3, follower3)
 
 #BloodOath.all[1].initiation_date
 #cult1.cult_population -- lists number of followers in a cult

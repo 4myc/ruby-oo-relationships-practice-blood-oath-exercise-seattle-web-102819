@@ -1,6 +1,5 @@
 class BloodOath
-    attr_reader :initiation_date
-    attr_accessor :cult, :follower
+    attr_reader :initiation_date, :cult, :follower
 
     @@all = []
 
@@ -10,6 +9,7 @@ class BloodOath
         @follower = follower
         @@all << self
     end
+    
     def self.all
         @@all 
     end
